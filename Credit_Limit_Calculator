@@ -24,9 +24,6 @@ namespace CSharp.Assignments.ConsoleLoop1
     {
         public static void Main()
         {
-            // read in account number
-            // Enter your sentinel loop here
-
             int balance, charges, totalCredits, allowedCredits, newBal;
 
             Console.WriteLine("Enter the Account no: ");
