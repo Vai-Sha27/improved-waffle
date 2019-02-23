@@ -27,10 +27,6 @@ namespace CSharp.Assignments.ConsoleLoop1
     {
         public static void Main()
         {
-            // prompt user for non-negative miles and obtain the input from user
-            // codes go here.
-
-            //Console.WriteLine("Enter the number of miles driven and gallons used: ");
             int miles, gallons;
             double totalMiles = 0, totalGallons = 0;
 
