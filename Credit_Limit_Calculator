@@ -35,7 +35,7 @@ namespace CSharp.Assignments.ConsoleLoop1
             while (acctNo > 0)
             {
                 Console.WriteLine("Enter the balance: ");
-                balance = Convert.ToInt32(Console.ReadLine());
+                balance =  Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Enter the charges: ");
                 charges = Convert.ToInt32(Console.ReadLine());
