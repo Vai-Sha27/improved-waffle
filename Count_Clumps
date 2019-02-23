@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSharp.Assignments.ConsoleLoop2
+{
+    /// <summary>
+    /// Create an app that lets you enter a bunc hof integers until the
+    /// end of line with a CTRL-Z. We will say that a "clump" of these numbers
+    /// is a series of 2 or more adjacent elements of the same value. The app will
+    /// simply print out the number that is the count of these clumps.
+    /// </summary>
+    public class CountClumps
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Enter numbers (null to exit): ");
+            var input =Console.ReadLine();
+            var number = Convert.ToInt32(input);
+            int count = 0;
+
+            var numList = new List<int>();
+            while(input!=null && number >= 0)
+            {
+                numList.Add(number);
+
+                input = Console.ReadLine();
+                number = Convert.ToInt32(input);
+            }
+
+            for(var i = 0; i < numList.Count-1; i++)
+            {
+                if (numList[i] == numList[i+1])
+                    count++;
+
+                for (var j = i + 1; j < numList.Count; j++)
+                    if (numList[i] == numList[j])
+                        i++;
+                    else
+                        break;
+            }
+            Console.WriteLine(count);    
+        }
+    }
+}
