@@ -34,7 +34,7 @@ namespace CSharp.Assignments.ConsoleLoop1
             {
                 Console.Write("Enter the number of miles (-1 to quit): ");
                 miles = int.Parse(Console.ReadLine());
-                if (miles == -1)
+                if (miles == -1) 
                 {
                     return;
                 }
